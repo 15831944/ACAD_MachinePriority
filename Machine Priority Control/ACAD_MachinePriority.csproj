@@ -10,7 +10,7 @@
     <ProjectGuid>{C2D0D39F-89E1-48FA-BF05-A3E276A652AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Machine_Priority_Control</RootNamespace>
+    <RootNamespace>ACAD_Machine_Priority</RootNamespace>
     <AssemblyName>Machine Priority Control</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -52,6 +52,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd, Version=19.1.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -127,9 +134,7 @@
     <Compile Include="MachinePriority.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MachinePriority.Designer.cs">
-      <DependentUpon>MachinePriority.cs</DependentUpon>
-    </Compile>
+    <Compile Include="MachinePriority.Designer.cs" />
     <Compile Include="myCommands.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,9 +150,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MachinePriority.resx">
-      <DependentUpon>MachinePriority.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePriority.resx" />
     <EmbeddedResource Include="myCommands.resx">
       <DependentUpon>myCommands.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Machine_Priority_Control;
+using ACAD_Machine_Priority;
 
 namespace MachinePriorityControlTest {
   [TestClass]

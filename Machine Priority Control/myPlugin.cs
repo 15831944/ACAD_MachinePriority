@@ -8,9 +8,9 @@ using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.EditorInput;
 
 // This line is not mandatory, but improves loading performances
-[assembly: ExtensionApplication(typeof(Machine_Priority_Control.MyPlugin))]
+[assembly: ExtensionApplication(typeof(ACAD_Machine_Priority.MyPlugin))]
 
-namespace Machine_Priority_Control {
+namespace ACAD_Machine_Priority {
 
   // This class is instantiated by AutoCAD once and kept alive for the 
   // duration of the session. If you don't do any one time initialization 

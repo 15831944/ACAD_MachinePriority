@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Machine_Priority_Control {
+namespace ACAD_Machine_Priority {
     
     
     /// <summary>
@@ -4900,7 +4900,7 @@ namespace Machine_Priority_Control {
         }
     }
 }
-namespace Machine_Priority_Control.ENGINEERINGDataSetTableAdapters {
+namespace ACAD_Machine_Priority.ENGINEERINGDataSetTableAdapters {
     
     
     /// <summary>
@@ -5105,7 +5105,7 @@ SELECT CLPARTID, CLID, PARTID, MATID, EDGEID_LF, EDGEID_LB, EDGEID_WR, EDGEID_WL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5694,7 +5694,7 @@ SELECT CLID, PARTNUM, REV, DRAWING, CUSTID, CDATE, DESCR, LENGTH, WIDTH, HEIGHT,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6164,7 +6164,7 @@ SELECT PROGID, MACHID, PARTID, PRIORITY FROM CUT_MACHINE_PROGRAMS WHERE (PROGID 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6801,7 +6801,7 @@ SELECT MACHID, MACHNUM, MACHNAME, NICKNAME, TYPE, LOC FROM CUT_MACHINES WHERE (M
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7323,7 +7323,7 @@ SELECT TYPEID, TYPEDESC, TYPEINC, TYPEREP FROM CUT_PART_TYPES WHERE (TYPEID = @T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7813,7 +7813,7 @@ SELECT PARTID, PARTNUM, DESCR, FIN_L, FIN_W, THICKNESS, CNC1, CNC2, BLANKQTY, OV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8704,7 +8704,7 @@ SELECT ID, STATE, STATENUMBER FROM CUT_STATES WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Machine_Priority_Control.Properties.Settings.Default.ENGINEERINGConnectionString;
+            this._connection.ConnectionString = global::ACAD_Machine_Priority.Properties.Settings.Default.ENGINEERINGConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

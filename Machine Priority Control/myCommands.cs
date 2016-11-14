@@ -6,11 +6,12 @@ using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
 using Autodesk.AutoCAD.EditorInput;
+using ACAD_Machine_Priority;
 
 // This line is not mandatory, but improves loading performances
-[assembly: CommandClass(typeof(Machine_Priority_Control.MyCommands))]
+[assembly: CommandClass(typeof(ACAD_Machine_Priority.MyCommands))]
 
-namespace Machine_Priority_Control {
+namespace ACAD_Machine_Priority {
 
   // This class is instantiated by AutoCAD for each document when
   // a command is called by the user the first time in the context

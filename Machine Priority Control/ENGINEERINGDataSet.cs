@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-namespace Machine_Priority_Control {
+namespace ACAD_Machine_Priority {
     
     
     public partial class ENGINEERINGDataSet {
@@ -47,7 +47,7 @@ namespace Machine_Priority_Control {
         ENGINEERINGDataSetTableAdapters.CUT_MACHINE_PROGRAMSTableAdapter ta = 
           new ENGINEERINGDataSetTableAdapters.CUT_MACHINE_PROGRAMSTableAdapter();
         foreach (KeyValuePair<int, int> item in d) {
-          if (item.Value == 0) {
+          if (item.Value == -1) {
             ta.DeleteMachPart(item.Key, partid);
           } else if (ta.UpdatePriority((short)item.Value, item.Key, partid) < 1) {
             ta.InsertMachPriority(item.Key, partid, (short)item.Value);
