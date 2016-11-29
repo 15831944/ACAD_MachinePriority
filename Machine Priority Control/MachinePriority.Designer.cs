@@ -191,6 +191,7 @@
       this.listBox4.Size = new System.Drawing.Size(138, 259);
       this.listBox4.TabIndex = 15;
       this.listBox4.ValueMember = "MACHID";
+      this.listBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox4_MouseClick);
       // 
       // cUTMACHINESBindingSource3
       // 

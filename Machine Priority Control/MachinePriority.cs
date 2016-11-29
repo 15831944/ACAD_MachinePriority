@@ -207,6 +207,7 @@ namespace ACAD_Machine_Priority {
       if (selected) {
         listBox2.SetSelected(si, false);
         listBox3.SetSelected(si, false);
+        listBox4.SetSelected(si, false);
       }
     }
 
@@ -216,6 +217,7 @@ namespace ACAD_Machine_Priority {
       if (selected) {
         listBox1.SetSelected(si, false);
         listBox3.SetSelected(si, false);
+        listBox4.SetSelected(si, false);
       }
     }
 
@@ -225,6 +227,17 @@ namespace ACAD_Machine_Priority {
       if (selected) {
         listBox1.SetSelected(si, false);
         listBox2.SetSelected(si, false);
+        listBox4.SetSelected(si, false);
+      }
+    }
+
+    private void listBox4_MouseClick(object sender, MouseEventArgs e) {
+      int si = listBox4.IndexFromPoint(e.Location);
+      bool selected = si != -1 && listBox4.GetSelected(si);
+      if (selected) {
+        listBox1.SetSelected(si, false);
+        listBox2.SetSelected(si, false);
+        listBox3.SetSelected(si, false);
       }
     }
 
