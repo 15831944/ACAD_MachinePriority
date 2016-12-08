@@ -41,7 +41,8 @@ namespace ACAD_Machine_Priority {
     private static string resolve_to_part(System.IO.FileInfo fi) {
       string res = string.Empty;
       System.Text.RegularExpressions.MatchCollection mc;
-      System.Text.RegularExpressions.Regex rx = new System.Text.RegularExpressions.Regex(@"([0-9]+)");
+      System.Text.RegularExpressions.Regex rx =
+        new System.Text.RegularExpressions.Regex(Properties.Settings.Default.CNCProgramFileNameRegex);
       mc = rx.Matches(fi.Name);
       switch (mc.Count) {
         case 3:
@@ -54,6 +55,7 @@ namespace ACAD_Machine_Priority {
           res = mc[0].Value;
           break;
         default:
+          res = "AAAAAAAAAA";
           break;
       }
       return ENGINEERINGDataSet.get_part_by_prog(res);
