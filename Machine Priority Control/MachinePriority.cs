@@ -165,6 +165,8 @@ namespace ACAD_Machine_Priority {
     }
 
     private void Form1_Load(object sender, EventArgs e) {
+      Size = Properties.Settings.Default.FormSize;
+      Location = Properties.Settings.Default.FormLocation;
 #if DEBUG
       Show();
 #endif
@@ -173,8 +175,12 @@ namespace ACAD_Machine_Priority {
       this.cUT_PARTSTableAdapter.Fill(this.eNGINEERINGDataSet.CUT_PARTS);
       this.cUT_MACHINESTableAdapter.Fill(this.eNGINEERINGDataSet.CUT_MACHINES);
       get_priorities();
-      Size = Properties.Settings.Default.FormSize;
-      Location = Properties.Settings.Default.FormLocation;
+      if (comboBox1.Items.Count < 1) {
+        string message = string.Format(Properties.Settings.Default.PartNotInCutlistMessage, PreSelectedPart);
+        string title = Properties.Settings.Default.PartNotInCutlistText;
+        System.Windows.Forms.MessageBox.Show(message, title, MessageBoxButtons.OK);
+        Close();
+      }
       update_common_parts();
       listBox5.Focus();
     }

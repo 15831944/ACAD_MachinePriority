@@ -68,5 +68,47 @@ namespace ACAD_Machine_Priority.Properties {
                 this["CNCProgramRegex"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("{0} not found in the Engineering Database.")]
+        public string PartNotInCutlistMessage {
+            get {
+                return ((string)(this["PartNotInCutlistMessage"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Cannot proceed.")]
+        public string PartNotInCutlistText {
+            get {
+                return ((string)(this["PartNotInCutlistText"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("([0-9]{5,6})")]
+        public string CNCProgramFileNameRegex {
+            get {
+                return ((string)(this["CNCProgramFileNameRegex"]));
+            }
+            set {
+                this["CNCProgramFileNameRegex"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Setting {
+            get {
+                return ((string)(this["Setting"]));
+            }
+            set {
+                this["Setting"] = value;
+            }
+        }
     }
 }
