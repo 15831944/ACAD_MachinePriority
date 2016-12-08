@@ -176,6 +176,9 @@ namespace ACAD_Machine_Priority {
       this.cUT_MACHINESTableAdapter.Fill(this.eNGINEERINGDataSet.CUT_MACHINES);
       get_priorities();
       if (comboBox1.Items.Count < 1) {
+        if (PreSelectedPart.Length == 0) {
+          PreSelectedPart = "NULL";
+        }
         string message = string.Format(Properties.Settings.Default.PartNotInCutlistMessage, PreSelectedPart);
         string title = Properties.Settings.Default.PartNotInCutlistText;
         System.Windows.Forms.MessageBox.Show(message, title, MessageBoxButtons.OK);
